@@ -1,1 +1,794 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sophomore GarDen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta http-equiv="Content-type" content="text/html;charset=UTF-8"> -->
+    <!-- <link rel="shortcut icon" href="favicon.png"> -->
+
+    <!-- <base target="_blank"> -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="index-detail.css">
+    <!-- <link rel="stylesheet" href="arena/index.css">
+    <link rel="stylesheet" href="arena/font.css"> -->
+    <link rel="stylesheet" href="index_media.css">
+
+    <!-- script: index_ie.js -->
+    <script type="text/javascript" src="index_ie.js"></script>
+
+    <!-- script: Masonry -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <!--  This is for Are.na routing  -->
+    <script src="//unpkg.com/navigo"></script>
+
+    <!-- script: P5js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <!-- <div style="position: fixed; top:0; width: 100%; z-index: 10; pointer-events: none;">
+      <div style="position: absolute; left:0;">
+        <h3>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+        </h3>
+      </div>
+      <div style="position: absolute; right:0;">
+        <h3>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+          †<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>†<br><br>
+        </h3>
+      </div>
+    </div> -->
+    
+
+    <!-- Menu ================================================================== -->
+    <div class="menu-top-left">
+      <button class="menu-index font-menu" onclick="location.href='index.html'" type="button">
+        Soph GD
+      </button>
+      <button id="row4" class="menu-btn font-menu" onclick="menuSyllabus()" type="button">
+        Syllabus
+      </button>
+      <button id="row5" class="menu-btn font-menu" onclick="menuSchedule()" type="button">
+        Schedule
+      </button>
+      <button id="row2" class="menu-btn font-menu" onclick="menuProjects()" type="button">
+        ➊
+      </button>
+      <button id="row3" class="menu-btn font-menu" type="button">
+        ➋
+      </button>
+      <button id="row1" class="menu-btn font-menu" type="button">
+        ❸
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://docs.google.com/document/d/1zCe-gA4HGjzBg_3pS67KdfbCr146K1PxoRlDZmnlDTY/edit?usp=sharing', '_blank');" type="button">
+        Sign-up
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://drive.google.com/drive/folders/1gp-ZNpEaIzzwleZv2AzZgk5BW407Vs_5?usp=drive_link', '_blank');" type="button">
+        G-Drive
+      </button>
+      <button class="menu-btn blank font-menu" onclick="javascript:window.open('https://www.are.na/spring-2024-bu-sophomore-graphic-design/bu-soph-gd-collaborative-archive', '_blank');" type="button">
+        Are.na
+      </button>
+    </div>
+
+    <!-- <div class="menu-top-right">
+      <button id="row5" class="menu-btn font-menu" onclick="menuSyllabus()" type="button">
+        Syllabus
+      </button>
+      <button id="row6" class="menu-btn font-menu" onclick="menuSchedule()" type="button">
+        Schedule
+      </button>
+      <button id="row1" class="menu-btn font-menu" onclick="menuProjects()" type="button">
+        ➊
+      </button>
+      <button id="row2" class="menu-btn font-menu" type="button">
+        ➋
+      </button>
+      <button id="row3" class="menu-btn font-menu" type="button">
+        ❸
+      </button>
+      <button id="row4" class="menu-btn font-menu" type="button">
+        ➍
+      </button>
+      <button class="font-menu" style="padding-right:5px; border-width: 0; background: transparent;" type="button">
+        
+      </button>
+      <button id="row7" class="menu-btn font-menu" onclick="menuArena()" type="button">
+        Note
+      </button>
+      <button class="menu-btn font-menu" onclick="javascript:window.open('https://docs.google.com/document/d/1toKIMsfGcYUYXohZGOpnBLNVuVZfpCLny5dz9ly-bSY/edit?usp=sharing', '_blank');" type="button">
+        Sign-up
+      </button>
+      <button class="menu-btn font-menu" onclick="javascript:window.open('https://drive.google.com/drive/folders/16eGiQWQRIm86FgiWRTDg19b-6z3mNlvH?usp=sharing', '_blank');" type="button">
+        G-Drive
+      </button>
+      <button class="menu-btn font-menu" onclick="javascript:window.open('https://www.are.na/platform-9-ctc-1000-103/platform-9-collaborative-archive', '_blank');" type="button">
+        Are.na
+      </button>
+    </div> -->
+
+    <!-- <div class="menu-top-right-right">
+      <button id="nine-ten" class="d-btn font-menu" onclick="nine_ten()" type="button">
+        9 ¾
+      </button>
+    </div> -->
+    
+
+    <!-- <div class="menu-top-right-right">
+      <button id="door1" class="d-btn font-menu" onclick="mainDoor()" type="button">
+        1
+      </button>
+      <br>
+      <button id="door2" class="d-btn font-menu" type="button">
+        2
+      </button>
+      <br>
+      <button id="door3" class="d-btn font-menu" type="button">
+        3
+      </button>
+
+      <div class="menu-time font-menu">
+        <div date="current">12/00/2022</div>
+        <div class="w-embed">
+          <script>
+          (() => {
+          const currentScript = document.currentScript; const wrapper = currentScript.closest('.w-embed').parentElement;
+          const currentDate = wrapper.querySelector('[date="current"]');
+          const options = {}
+          for (let key of ["weekday", "year","month", "day", "dateStyle"]) {
+            if (currentDate.dataset[key]) {
+             options[key] = currentDate.dataset[key];
+            }
+          }
+          currentDate.textContent = new Date().toLocaleDateString([], options);
+          })();
+          </script>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- Body: P1 ================================================================== -->
+    <div class="row2">
+      <div class="scrollContents">
+
+        <div class="col2" style="text-indent: 0px;">
+          <!-- --------------------------------------------------------------- -->
+          <div id="p1_magicSpells_1">
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h4>
+              Visual forms function as languages, conveying meaning and allowing the audience to intuitively understand the content being communicated, even without using words.
+              <br><br>
+              In Project 1, we will create static forms based on a set of prompts across media and will create a typeface. A series of workshops is designed to foster the development of abstract (non-representational) forms within a short timeframe. Engaging in this process will enhance your familiarity with both the graphic design language and essential design software. The outcomes produced in Project 1 will undergo further development in subsequent projects, serving as the primary content for upcoming projects. 
+              <br><br>
+            </h4>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+          <div id="p1_magicSpells_2">
+            <iframe class="col-arena-R" src="arena/p1_magic-spells_2.html"></iframe>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+        </div>
+
+        <div class="p-title">
+          <a href="https://www.are.na/spring-2024-bu-sophomore-graphic-design/form-making-workshops-typeface" target="_blank">
+            <h1 style="color: white;">FORM MAKING WORKSHOP & TYPEFACE</h1>
+          </a>
+
+          <div class="p-title-subM">
+            <div style="text-align: center;">
+              <button id="btn_p1_1" class="p-title-subM-btn font-menu" onclick="p1_magicSpells_1()" type="button">
+                Note
+              </button>
+              |
+              <button id="btn_p1_2" class="p-title-subM-btn font-menu" onclick="p1_magicSpells_2()" type="button">
+                Resources
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Body: P2 ================================================================== -->
+    <div class="row3">
+      <div class="scrollContents">
+
+        <!-- <div class="h-top"></div>
+        <h1>Infinite Figures</h1> -->
+        
+        <div class="col2-text" style="text-indent: 0px;">
+          <!-- --------------------------------------------------------------- -->
+          <div id="p2_infiniteFigures_1">
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <h4>
+              In Project 2, we will transform the forms created in Project 1 into practical design work applicable in real-world graphic design scenarios.
+              <br><br>
+              For the primary project, we will convert these forms into a poster announcing the event, Multiple Formats. How you incorporate the forms into your poster—whether as a title font, graphic elements, or the physical form itself—is open to your creative interpretation. With the exception of the requirement that it must include the specified information, there are no limitations on the format such as size or printing method. However, your final outcome should visually convey your personal interpretation of how “Multiple Formats” is defined and understood.
+              <br><br>
+              For the side project, we will design a form guideline book showing how their creation process were undertaken so that you can reproduce your work for future projects. The decision on which forms from Project 1 to include depends on you. As a way to engage with the audience outside of class, we will organize a table and showcase your publication at Multiple Formats.
+              <br><br>
+
+              ✂︎-------------------------------------------<br>
+              [Feb 27 Tue]: BUGD Alumni Panel<br>
+              <br>
+              Zoom link: https://bostonu.zoom.us/j/98362030668?pwd=cldIV0RrYThjMklJbXVMamVQTU5MUT09<br>
+              <br>
+              Passcode: 742729<br>
+              <br>
+              [SESSION 1]: 12:30 - 1:30<br>
+              Mary Pyrdol<br>
+              Jay Li<br>
+              Emily Knobloch<br>
+              Emma Snavely<br>
+              Angela Lian<br>
+              Mariana Velasquez<br>
+              Hannah Hong<br>
+              Jayna Mikolaitis<br>
+              Nell Sheridan<br>
+              <br>
+              [SESSION 2]: 3:30 - 4:30<br>
+              Crystal Sealey<br>
+              Natalie Bolton<br>
+              Faith Garcia<br>
+              Gregory Bond<br>
+              Andreina De La Blanca<br>
+              Lauren Had<br>
+              Geo Ferrari<br>
+              <br>
+              <br>
+              ✂︎-------------------------------------------<br>
+              [Feb 22 Thu]: Please check my email !<br>
+              <br>
+              - Riso Printing Workshop: Riso Printing Room (808, 4th Floor)<br>
+              - Group Discussion: Our Classroom (855, Room 500)<br>
+              <br>
+              <br>
+              [A1]<br>
+              <br>
+              [Group 1]  Adrienne, Aria, Liz, Sofia<br>
+              12:30 - 1:20  Riso Printing Workshop<br>
+              &nbsp;&nbsp;1:20 - 2:00  Group Discussion<br>
+                <br>
+              [Group 2] Anya, TK, Yingxuan, Allison<br>
+              12:30 - 1:10  Group Discussion<br>
+              &nbsp;&nbsp;1:20 - 2:10  Riso Printing Workshop<br>
+                <br>
+              [Group 3] Katie, Anastasia, Tyler, Teresa<br>
+              &nbsp;&nbsp;1:20 - 2:00  Group Discussion<br>
+              &nbsp;&nbsp;2:10 - 3:00  Riso Printing Workshop<br>
+                <br>
+                <br>
+              [B1]<br>
+              <br>
+              [Group 1] Taylor, Brian, Augie, Isaac<br>
+              3:30 - 4:20  Riso Printing Workshop<br>
+              4:20 - 5:00  Group Discussion<br>
+              <br>
+              [Group 2] Anne, Megan, Steph, Sua<br>
+              3:30 - 4:10  Group Discussion<br>
+              4:20 - 5:10  Riso Printing Workshop<br>
+              <br>
+              [Group 3] Lia, Jacque, Janet, Yuting<br>
+              4:20 - 5:00  Group Discussion<br>
+              5:10 - 6:00   Riso Printing Workshop<br>
+              <br>
+              <br>
+              ✂︎-------------------------------------------<br>
+              [Feb 20 Tue]<br>
+              <br>
+              Welcome Mary !<br>
+              <br>
+              &nbsp;\&nbsp;☻&nbsp;/<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;| <br>
+              &nbsp;&nbsp;/&nbsp;&nbsp;\<br>
+                <br>
+              ✂︎-------------------------------------------<br>
+              [Feb 13 Tue] 🌪<br>
+              <br>
+              Due to the storm, classes on Feb 13 are canceled.<br>
+              The Riso workshops scheduled for tomorrow will be conducted next Thursday (Feb 22). <br>
+              <br>
+              We will see you this Thursday (Feb 15) in our classroom.<br>
+              Please check my email! <br>
+              <br>
+              - Halim<br>
+              <br>
+            </h4>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+          <div id="p2_infiniteFigures_2">
+            <iframe class="col-arena-R" src="arena/p2_infinite-figures_2.html"></iframe>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+        </div>
+        
+        <div class="p-title">
+          <a href="https://www.are.na/spring-2024-bu-sophomore-graphic-design/static-forms-messages" target="_blank">
+            <h1 style="color: white;">Static Form & Message</h1>
+          </a>
+
+          <!-- <div class="p-title-sub">
+            <div class="p-title-sub-L">
+              <a href="https://www.are.na/platform-9-ctc-1000-103/infinite-figures-1" target="_blank">
+                <h3 class="p-title-sub-link">1.11 Thu // Infinite Figures 1</h3>
+              </a>
+            </div>
+            <div class="p-title-sub-R">
+              <a href="https://www.are.na/platform-9-ctc-1000-103/infinite-figures-2" target="_blank">
+                <h3 class="p-title-sub-link">1.12 Fri // Infinite Figures 2</h3>
+              </a>
+            </div>
+          </div> -->
+
+          <div class="p-title-subM">
+            <div style="text-align: center;">
+              <button id="btn_p2_1" class="p-title-subM-btn font-menu" onclick="p2_infiniteFigures_1()" type="button">
+                Note
+              </button>
+              |
+              <button id="btn_p2_2" class="p-title-subM-btn font-menu" onclick="p2_infiniteFigures_2()" type="button">
+                Resources
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Body: P3 ================================================================== -->
+    <div id="main" class="row1">
+      <div class="scrollContents">
+        
+        <div class="col2-text" style="text-indent: 0px;">
+          <!-- --------------------------------------------------------------- -->
+          <div id="p3_ghosts_1">
+            <iframe class="col-note" src="https://bu-n-24s.glitch.me"></iframe>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+          <div id="p3_ghosts_2">
+            <!-- <iframe class="col3-arena-2" src="arena/p1_magic-spells_1.html"></iframe> -->
+            <iframe class="col-arena-R" src="arena/p3_ghosts_2.html"></iframe>
+          </div>
+          <!-- --------------------------------------------------------------- -->
+          <!-- <div id="p3_ghosts_3">
+            <iframe class="col3-arena-3" src="https://platform-n-3.glitch.me"></iframe>
+          </div> -->
+          <!-- --------------------------------------------------------------- -->
+        </div>
+
+        <!-- <div style="mix-blend-mode: difference;">
+          <h1 style="color: white;">Ghosts in the Net</h1>
+        <h3 style="text-align: center;">1:1 Meetings Zoom Link</h3>
+        </div> -->
+
+        <div class="p-title">
+          <a href="https://www.are.na/spring-2024-bu-sophomore-graphic-design/dynamic-form-information" target="_blank">
+            <h1 style="color: white;">Dynamic Form & Information</h1>
+          </a>
+          
+          <!-- <h3 style="color: white; text-align: center;">1:1 Meetings Zoom Link</h3> -->
+  
+          <!-- <div class="p-title-sub">
+            <div class="p-title-sub-L">
+              <a href="https://www.are.na/platform-9-ctc-1000-103/ghosts-in-the-net-1" target="_blank">
+                <h3 class="p-title-sub-link">1.17 Wed // Ghosts in the Net 1</h3>
+              </a>
+            </div>
+            <div class="p-title-sub-R">
+              <a href="https://www.are.na/platform-9-ctc-1000-103/ghosts-in-the-net-2" target="_blank">
+                <h3 class="p-title-sub-link">1.19 Fri // Ghosts in the Net 2</h3>
+              </a>
+            </div>
+          </div> -->
+  
+          <div class="p-title-subM">
+            <div style="text-align: center;">
+              <button id="btn_p3_1" class="p-title-subM-btn font-menu" onclick="p3_ghosts_1()" type="button">
+                Note
+              </button>
+              |
+              <button id="btn_p3_2" class="p-title-subM-btn font-menu" onclick="p3_ghosts_2()" type="button">
+                Resources
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Body: Syllabus ================================================================== -->
+    <div class="row4">
+      <div class="scrollContents">
+        <div class="h-top"></div>
+        <!-- <div style="height: 20px;"></div> -->
+
+        <div class="col2">
+          <h3 style="text-indent: 0px;">
+            <div>
+              <h3>
+                BU Spring 2024
+              </h3>
+              <h3>
+                Sophomore Graphic Design —<br>
+                Form, Communication
+              </h3>
+            </div>
+          </h3>
+          <h3 style="text-indent: 0px;">
+            <div>
+              <h3>
+                CFA AR 226
+              </h3>
+              <h3>
+                CREDIT 4<br>
+                Location: Room 500 (855 Commonwealth Ave)
+              </h3>
+            </div>
+          </h3>
+        </div>
+
+        <br>
+
+        <div class="col2">
+          <h3 style="text-indent: 0px;">
+            <div>
+              <h3 style="display: grid; grid-template-columns: 180px auto;">
+                <ul>
+                  <li>
+                    Instructor
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <ul class="bulletS">
+                      <li class="link"><a href = "https://leehalim.com" target="_blank">Halim Lee</a></li>
+                      <li class="link"><a href = "mailto: halim@bu.edu">halim@bu.edu</a></li>
+                      <!-- <li class="link"><a href="https://leehalim.com" target="_blank">leehalim.com</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+              </h3>
+              <br>
+              <h3 style="display: grid; grid-template-columns: 120px auto;">
+                <ul>
+                  <li>
+                    Office Hours
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Sat 1:00 — 5:00 pm<br>
+                    by appointment
+                  </li>
+                </ul>
+              </h3>
+            </div>
+          </h3>
+
+          <h3 style="text-indent: 0px;">
+            <div>
+              <h3 style="display: grid; grid-template-columns: 45px auto;">
+                <ul>
+                  <li>
+                    A1 |
+                  </li>
+                  <li>
+                    B1 |
+                  </li>
+                  <br>
+                </ul>
+                <ul>
+                  <li>
+                    Tue/Thur 12:30 — 3:15 PM
+                  </li>
+                  <li>
+                    Tue/Thur &nbsp;3:30 — 6:15 PM
+                  </li>
+                  <br>
+                </ul>
+              </h3>
+              <h3 style="display: grid; grid-template-columns: 45px auto;">
+                <ul>
+                  <li>
+                    TA |
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    Gazelle (Ghazaleh) Farrokhi
+                    <ul class="bulletS">
+                      <li class="link"><a href = "mailto: fqazaleh@bu.edu">fqazaleh@bu.edu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </h3>
+            </div>
+            <br>
+            <div>
+            </div>
+          </h3>
+        </div>
+        <br>
+
+        <div class="col2" style="text-indent: 0px;">
+          <div>
+            <h3>Description</h3>
+            <h4>
+              Students will investigate how ideas and messages can be interpreted visually through a variety of projects. Form--content relationships will be the context for all projects. Students will study the broad concepts of denotation and connotation through projects including information design, communication through proxy and juxtaposition and communication through symbols, metaphor and metonymy. Static and dynamic design solutions will be explored. Open to undergraduate sophomore graphic design students. This is a required course for graphic design majors.
+            </h4><br><br>
+
+            <h3>Learning Outcomes</h3>
+            <h4><ul class="bullet">
+              <li>Translate the subject matter into diverse and unique visual forms</li>
+              <li>Develop methodologies for creating forms and establish their own visual repositories across media</li>
+              <li>Improve abilities to produce visually refined outputs</li>
+              <li>Familiarize themselves with essential graphic design software</li>
+              <li>Collaborate to develop a semester-wide research archive</li>
+            </ul></h4><br>
+
+            <h3>Required Supplies & Courseware</h3>
+            <h4>
+              <ul class="bullet">
+                <li style="padding-bottom: 0;">Laptop<br>
+                  +
+                </li>
+              </ul>
+              <ul class="bullet">
+                <li class="link" style="padding-bottom: 0;"><a href = "https://www.adobe.com/creativecloud.html" target="_blank">Adobe Creative Cloud</a></li>
+                <li class="link" style="padding-bottom: 0;"><a href = "https://drive.google.com/drive/folders/1gp-ZNpEaIzzwleZv2AzZgk5BW407Vs_5?usp=drive_link" target="_blank">Google Drive</a></li>
+                <li class="link" style="padding-bottom: 0;"><a href = "https://are.na" target="_blank">Are.na</a></li>
+                <li class="link" style="padding-bottom: 0;"><a href = "https://cargo.site" target="_blank">Cargo</a></li>
+                <li class="link" style="padding-bottom: 0;"><a href = "https://glitch.com" target="_blank">Glitch</a></li>
+              </ul>
+            </h4><br><br>
+
+            <h3>Materials & Cost</h3>
+            <h4><ul class="bullet">
+              <li>Project 1 and Project 2 require payment for printing</li>
+            </ul></h4><br>
+            <hr><br><br>
+
+            <!-- <h3>​​Course Policies</h3> -->
+            <h3>Disability Statement</h3>
+            <h4>
+              Students who have self-identified, provided documentation of their disability, and requested reasonable accommodations may be entitled to receive approved modifications in the classroom, appropriate academic adjustments, or auxiliary aids that enable them to participate in and benefit from all educational programs and activities. Please see http://www.bu.edu/disability for more details.  
+            </h4><br><br>
+
+            <h3>Attendance & Absences</h3>
+            <h4>
+              Please make every effort to arrive punctually. You must attend all the classes. According to the SVA Attendance Policy, unless specific permission for absence is arranged with the instructor of this course, students must attend class to receive credit for the course. Unexcused absences exceeding 1/4 of the total class hours in a given semester are considered excessive in all SVA courses. Tardiness and any unexcused absences will reduce your course grade. Three unexcused absences will reduce your semester grade by one step (e.g. A- to B+). Seven unexcused absences will earn you a failing grade for the course.  
+            </h4><br><br>
+
+            <h3>Project Submission</h3>
+            <h4>
+              All projects should be uploaded to the class Google Drive by the date specified in the class schedule. December 15 is the last day to upload all project files and materials. Files uploaded after this date will be rejected for your semester grade. 
+            </h4><br><br>
+
+            <h3>Wellness and Health</h3>
+            <h4>
+              Your health and well-being are important for your journey as a professional graphic designer. It is important to work hard and balance that with rest, self-care, and attention to your mental and physical health. I will challenge you in this class through assignments, activities, and discussions. However, the work in this class should not be at the expense of your well-being. If for any reason you are struggling to find balance in your work life and health/wellbeing, please reach out. I am happy to discuss ways in which this class can support you in your learning and growth. You can find more resources provided by BU CFA Mental Health & Wellness Resources.
+            </h4><br><br>
+            <!-- <hr><br><br> -->
+
+          </div>
+
+          <!-- --------------------------------------------------------------- -->
+
+          <div>
+            <h3>Project 1: Form Making Workshop & Typeface</h3>
+            <h4>
+              Visual forms function as languages, conveying meaning and allowing the audience to intuitively understand the content being communicated, even without using words.
+              <br><br>
+              In Project 1, we will create static forms based on a set of prompts across media and will create a typeface. A series of workshops is designed to foster the development of abstract (non-representational) forms within a short timeframe. Engaging in this process will enhance your familiarity with both the graphic design language and essential design software. The outcomes produced in Project 1 will undergo further development in subsequent projects, serving as the primary content for upcoming projects. 
+            </h4><br><br>
+            <hr><br><br>
+
+            <h3>Project 2: Static Form & Message</h3>
+            <h4>
+              In Project 2, we will transform the forms created in Project 1 into practical design work applicable in real-world graphic design scenarios.
+              <br><br>
+              For the primary project, we will convert these forms into a poster announcing the event, Multiple Formats. How you incorporate the forms into your poster—whether as a title font, graphic elements, or the physical form itself—is open to your creative interpretation. With the exception of the requirement that it must include the specified information, there are no limitations on the format such as size or printing method. However, your final outcome should visually convey your personal interpretation of how “Multiple Formats” is defined and understood. 
+              <br><br>
+              For the side project, we will design a form guideline book showing how their creation process were undertaken so that you can reproduce your work for future projects. The decision on which forms from Project 1 to include depends on you. As a way to engage with the audience outside of class, we will organize a table and showcase your publication at Multiple Formats.
+            </h4><br><br>
+            <hr><br><br>
+
+            <h3>Project 3: Dynamic Form & Information</h3>
+            <h4>
+              For Project 3, we will create another form guideline, but arranged as a (minimum) one-page website providing further explanations about your forms. In contrast to Project 2, this project utilizes dynamic forms, including motion forms created with After Effects and interactive forms that change their shapes based on the user's mouse scroll. You have the flexibility to use either existing forms from Project 1 or generate entirely new ones to create dynamic forms. 
+              <br><br>
+              Additionally, we will learn how to turn your form-making process into Photoshop and Illustrator Actions. It is encouraged to upload the completed Action files to your website so that visitors can download them and try your form-making processes.
+            </h4><br><br>
+            <hr><br><br>
+
+            <h3>Grading</h3>
+            <h4>
+              <ul class="bulletG6">
+                <li>Course assignments & Projects: ideation, visual ability, final deliverables</li>
+              </ul>
+              <ul class="bulletG2">
+                <li>Depth & Breadth: subject research, willingness to experiment</li>
+              </ul>
+              <ul class="bulletG2">
+                <li>Class participation & Contribution</li>
+              </ul>
+            </ul></h4><br><br>
+
+            <h3>Grades included in the GPA</h3>
+            <h4>
+            <div style="display: grid; grid-template-columns: 42px auto;">
+              <ul>
+                <li>A</li>
+              	<li>A −</li>
+              	<li>B +</li>
+              	<li>B</li>
+              	<li>B −</li>
+              	<li>C +</li>
+              	<li>C</li>
+              	<li>C −</li>
+              	<li>D</li>
+              	<li>F</li>
+              </ul>
+              <ul>
+                <li>4.000</li>
+              	<li>3.700</li>
+              	<li>3.300</li>
+              	<li>3.000</li>
+              	<li>2.700</li>
+              	<li>2.300</li>
+              	<li>2.000</li>
+              	<li>1.700</li>
+              	<li>1.000</li>
+              	<li>0.000</li>
+              </ul>
+            </div></h4><br>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Body: Schedule ================================================================== -->
+    <div class="row5">
+      <!-- <a href="#link1">Link 1</a><br>
+      <a href="#link2">Link 2</a> -->
+      <div class="scrollContents">
+        <div class="h-top"></div>
+        <!-- <iframe id="noteText" style="padding-top: 40px;" class="iframe-full" src="Letter1.pdf"></iframe> -->
+         <div id="link1" style="overflow: hidden;">
+          <iframe id="noteText" style="position: fixed; top:0; left:0; width: 100%; height: calc(100% + 50px);" src="https://propitious-areas-046221.framer.app/"></iframe>
+         </div>
+         <!-- <div id="link2" style="width: 792px; height: 612px; background:red; overflow: hidden;">
+          <iframe id="noteText" style="width: 792px; height: 662px;" src="https://propitious-areas-046221.framer.app/"></iframe>
+         </div> -->
+        <!-- <iframe id="noteText" style="padding-top: 40px;" class="iframe-full" src="https://holistic-foggy-dragon.glitch.me/bb.html"></iframe> -->
+        <!-- <iframe id="noteText" class="iframe-full" src="https://g-calendar.glitch.me"></iframe> -->
+      </div>
+    </div>
+
+    <!-- Body: Are.na ================================================================== -->
+    <div class="row7">
+      <div class="scrollContents">
+        <iframe id="noteText" class="iframe-full" src="https://platform-n.glitch.me"></iframe>
+      </div>
+    </div>
+
+    <!-- Body: Are.na ================================================================== -->
+
+    <iframe id="notePen" class="toolsWorld" src="https://holistic-foggy-dragon.glitch.me/aa.html"></iframe>
+    <!-- <iframe id="notePen" class="toolsWorld" src="/note/index.html"></iframe> -->
+
+    <!-- <iframe class="iframe-full-m" src="https://obtainable-subdued-stoat.glitch.me/index.html"></iframe> -->
+
+    <!-- 
+    <div id="nine_ten">
+      <iframe class="iframe-full-m" src="https://platform-m.glitch.me/index.html"></iframe>
+    </div> -->
+
+    
+    <!-- <iframe class="iframe-full-m" src="/p1_magic_spells_2/index.html"></iframe> -->
+
+
+  
+
+    <!-- <iframe class="iframe-full-m" src="https://frozenisland.live"></iframe>  -->
+
+    <!-- <iframe id="notePen" class="col-arena-L" src="https://platform-drawing2.glitch.me"></iframe> -->
+    
+    <!-- <div id="main-open" class="door1" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+      <iframe id="inneriframe" src="https://multiwin.glitch.me/3d/index.html" class="toolsWorld"></iframe>
+    </div> -->
+
+    <!-- <div class="door2" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+      <iframe id="inneriframe" src="https://platform-drawing2.glitch.me" class="toolsWorld"></iframe>
+    </div> -->
+
+    <!-- <div class="door3" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+      <iframe id="inneriframe" src="https://multiwin.glitch.me/3d/index.html" class="toolsWorld"></iframe>
+    </div> -->
+
+    <!-- <div class="door3" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; mix-blend-mode: difference; background: black; z-index: 10; pointer-events: none;">
+      <iframe id="inneriframe" src="https://multiwin.glitch.me/3d/index.html" class="toolsWorld"></iframe>
+    </div> -->
+
+
+    <!-- <iframe class="toolsWorld" id="inneriframe" src="https://platform-drawing2.glitch.me"></iframe> -->
+    <!-- <img src="./bg/door_1.png" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index:-1; pointer-events: none;"> -->
+
+    <!-- <iframe id="inneriframe" src="https://frozenisland.live" class="toolsWorld" style="z-index: 2;"></iframe> -->
+    
+    <!-- <iframe id="inneriframe" src="./p5js/index.html" class="toolsWorld" style="z-index: 3;"></iframe> -->
+    <!-- <iframe id="inneriframe" src="https://takeawalkonthewildside.rietveldacademie.nl/page/intro" class="toolsWorld" style="z-index: 3;"></iframe> -->
+
+    <!-- <iframe id="inneriframe" src="https://multiwin.glitch.me/windows.html" class="toolsWorld"></iframe> -->
+
+
+
+    <!-- script  -->
+    <script type="text/javascript" src="index.js"></script>
+    <!-- <script type="text/javascript" src="arena/p1_magic-spells_1.js"></script>
+    <script type="text/javascript" src="arena/p1_magic-spells_2.js"></script> -->
+
+
+
+    <!-- P1 Magic Spells - 2  -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+     
+    if (annyang) {
+      
+      let function1 = function() {
+        $("#item1").css({"display": "block"});
+      };
+      
+      let getStarted = function() {
+        window.location.href = 'https://github.com/TalAter/annyang';
+      }
+          
+      //When I say '...': function this
+      let commands = {
+        'Take me (to the platform)': function1,
+      };
+      
+      annyang.addCommands(commands);
+      annyang.setLanguage('en');
+      annyang.start();
+    }
+    </script>
+
+    <div id="item1" style="display:none;">
+      <iframe class="toolsWorld" src="/p1_magic_spells_2/index.html"></iframe>
+    </div> -->
+
+    <!-- P2 Infinite Figures - 1: Spline -->
+    <!-- <iframe class="toolsWorld" src="https://my.spline.design/kidsplaygroundphysicscopy-55e2e578a2cf923a233b1367ce43a52e/"></iframe> -->
+    <!-- <iframe class="toolsWorld" src="https://my.spline.design/glasscirclescopy-678dc8bb29bd29fe164f67f407f7ae48"></iframe> -->
+
+
+  </body>
+</html>
