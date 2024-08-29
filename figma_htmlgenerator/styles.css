@@ -1,0 +1,29 @@
+.2_4 { 
+	overflow:hidden;
+}.e2_4 { 
+	transform: rotate(90deg);
+	background-color:rgba(255, 255, 255, 1);
+	width:612px;
+	height:792px;
+	position:absolute;
+}.e11_9 { 
+	transform: rotate(-90deg);
+	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+	width:443px;
+	height:300px;
+	position:absolute;
+	left:218px;
+	top:723px;
+}.e11_10 { 
+	transform: rotate(-90deg);
+	color:rgba(255, 0, 0, 1);
+	width:309px;
+	height:154px;
+	position:absolute;
+	left:64px;
+	top:629px;
+	font-family:ABD;
+	text-align:left;
+	font-size:128px;
+	letter-spacing:0;
+}
