@@ -1,27 +1,12 @@
 @media only screen and (max-width:600px) {
-  /* .ChannelContents {
-    grid-template-columns: 1fr; 
-    font-size: 0;
-  }
 
-  .ChannelContents-3 {
-    grid-template-columns: 1fr 1fr 1fr; 
-    font-size: 0;
-  } */
-  
- 
-
-  p, h3 { 
-    /* font-size: 15px; */
+  .h-top {
+    height: 134px;
   }
   
 }
 
 @media only screen and (max-width:400px) {   /* For tablets: */
-
-  .h-top {
-    height: 134px;
-  }
 
   .ChannelContents {
     grid-template-columns: 1fr 1fr; 
@@ -36,20 +21,13 @@
   .Text {
     grid-column: 1 / span 2;
   }
-
-  /* .p1_magic-spells_1 {
-    grid-template-columns: 1fr; 
-    font-size: 0;
-  }
-
-  .p1_magic-spells_2 {
-    grid-template-columns: 1fr; 
-    font-size: 0;
-  } */
-  
-  /* .Text {
-    grid-column: 1 / span 3; 
-  } */
   
 }
 
+@media only screen and (max-height:400px) {
+
+  .h-top {
+    height: 89px;
+  }
+
+}

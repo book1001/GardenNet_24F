@@ -97,3 +97,11 @@ ul > li b i {
   }
   
 }
+
+@media only screen and (max-height:400px) {
+
+  .h-top {
+    height: 89px;
+  }
+
+}
