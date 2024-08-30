@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'FKGroteskSemiMonoTrial-Regular';
-  src: url('./font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
-  src: url('./font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
+  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
+  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
 }
 
 

@@ -1,3 +1,17 @@
+/* font: import ================================================ */
+
+@font-face {
+  font-family: 'FKGroteskMonoTrial-Regular';
+  src: url('../font/FKGroteskMonoTrial-Regular.woff') format('woff');
+  src: url('../font/FKGroteskMonoTrial-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FKGroteskSemiMonoTrial-Regular';
+  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
+  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
+}
+
 
 /* Default Font ================================================ */
 
@@ -33,6 +47,7 @@ a {
 b {
   color: black;
   background: white;
+  font-weight: normal;
 }
 
 ul > li b {
@@ -73,6 +88,8 @@ ul > li u {
 
 b i {
   background: red;
+  font-weight: normal;
+  font-style: normal;
 }
 
 ul > li b i {

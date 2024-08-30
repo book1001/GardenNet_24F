@@ -1,18 +1,3 @@
-/* font: import ================================================ */
-
-@font-face {
-  font-family: 'FKGroteskMonoTrial-Regular';
-  src: url('../font/FKGroteskMonoTrial-Regular.woff') format('woff');
-  src: url('../font/FKGroteskMonoTrial-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'FKGroteskSemiMonoTrial-Regular';
-  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff') format('woff');
-  src: url('../font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
-}
-
-
 /* Scrollbar ================================================ */
 
 :root {
