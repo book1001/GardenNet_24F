@@ -298,6 +298,25 @@ function p4_terra_2_PC() {
 }
 
 
+// Responsive: Schedule ------------------------------------------------
+
+// function schedule() {
+//   var tabletStyle = window.matchMedia("(max-width: 600px)");
+//   if (tabletStyle.matches) { // ~ Tablet: 600px
+//     schedule_Tablet()
+//   } else { // PC: 601px ~
+//     schedule_PC()
+//   }
+// }
+
+// function schedule_Tablet() {
+//   document.querySelector(".fc-col-header").style.width = "100% !important";
+// }
+
+// function schedule_PC() {
+//   document.querySelector(".fc-col-header").style.width = "100% !important";
+// }
+
 // Responsive: Window Resize ------------------------------------------------
 
 window.onresize = function(event) {
@@ -311,4 +330,46 @@ window.onresize = function(event) {
   p3_ghosts_2();
   p4_terra_1();
   p4_terra_2();
+  // schedule();
 };
+
+
+// window.onresize = function(event) {
+//   if(document.getElementById("col2-0").style.display == "block") {
+//     openAbout();
+//   } else {
+//     // document.getElementById("col2-1").style.display = "block";
+//     // document.getElementById("col2-2").style.display = "block";
+//     // thumbnailSelection();
+//     // openShortcuts();
+//     // filterSelection(lastC);
+//   }
+//   if(document.getElementById("col2-3").style.display == "block") {
+//     openArchive();
+//   } 
+
+// };
+
+// Responsive: Window Resize (Schedule) ------------------------------------------------
+
+function loadScript(url) {
+  const existingScript = document.querySelector(`script[src="${url}"]`);
+  if (existingScript) {
+      existingScript.remove();  // 이미 존재하는 스크립트가 있다면 제거
+  }
+
+  const script = document.createElement('script');
+  script.src = url;
+  script.onload = function() {
+      console.log(`${url} loaded`);
+      // 스크립트 로드 완료 후 추가 작업을 여기에 작성할 수 있습니다.
+  };
+  document.body.appendChild(script);
+}
+
+window.addEventListener("resize", function() {
+  loadScript("schedule/schedule_p1.js");
+});
+
+// 페이지 초기 로드 시 스크립트를 한 번 로드합니다.
+loadScript("schedule/schedule_p1.js");

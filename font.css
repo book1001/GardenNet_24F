@@ -12,64 +12,6 @@
   src: url('./font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'ABCArizona';
-  src: url('./font/ABCArizonaFlare-Regular.woff') format('woff');
-  src: url('./font/ABCArizonaFlare-Regular.woff2') format('woff2');
-  /* src: url('./font/ABCArizonaPlusVariable.ttf') format('ttf'); */
-  /* src: url('./font/ABCArizonaFlare-Regular.otf') format('opentype'); */
-}
-
-@font-face {
-  font-family: 'FKGroteskNeueTrial-Regular';
-  src: url('./font/FKGroteskNeueTrial-Regular.otf') format('opentype');
-
-  font-family: 'FKRomanStandardTrial-Regular';
-  src: url('./font/FKRomanStandardTrial-Regular.otf') format('woff');
-
-  font-family: 'FKRomanStandardTrial-Medium';
-  src: url('./font/FKRomanStandardTrial-Medium.otf') format('woff');
-
-  font-family: 'FKRasterRomanCompactTrial-Blended';
-  src: url('./font/FKRasterRomanCompactTrial-Blended.otf') format('woff');
-
-
-
-  font-family: 'body-serif-bold';
-  src: url('./font/FKRomanStandardTrial-Bold.otf') format('woff');
-
-  font-family: 'body-sans';
-  /* src: url('./font/TimeNewRoman.woff') format('woff'); */
-  src: url('./font/FKGroteskNeueTrial-Regular.otf') format('opentype');
-  /* src: url('./font/FKGroteskNeueTrial-Regular.otf') format('opentype'); */
-
-  font-family: 'TimeNewRoman';
-  src: url('./font/TimeNewRoman.woff') format('woff');
-
-  font-family: 'BaskervilleMTStd-Regular';
-  src: url('./font/BaskervilleMTStd-Regular.otf') format('opentype');
-
-  font-family: 'GaramondPremrPro-Disp';
-  src: url('./font/GaramondPremrPro-Disp.otf') format('opentype');
-
-  font-family: 'Century';
-  src: url('./font/Century.TTF') format('ttf');
-
-  font-family: 'COURIER';
-  src: url('./font/COURIER.ttf') format('ttf');
-
-  font-family: 'NotoSerif-Regular';
-  src: url('./font/NotoSerif-Regular.ttf') format('ttf');
-
-  font-family: 'CourierPrime-Regular';
-  src: url('./font/CourierPrime-Regular.ttf') format('ttf');
-
-  font-family: 'HelveticaNeue';
-  src: url('./font/HelveticaNeueLTStd-Roman.otf') format('opentype');
-  font-family: 'FragmentMono';
-  src: url('./font/FragmentMono-Regular.woff2') format('woff');
-}
-
 
 /* text: align ================================================ */
 

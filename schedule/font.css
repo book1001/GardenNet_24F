@@ -1,0 +1,109 @@
+
+/* Default Font ================================================ */
+
+.fc-col-header-cell-cushion {
+  font-family: FKGroteskSemiMonoTrial-Regular,sans-serif;
+  letter-spacing: 0.027em;
+  font-weight: normal;
+}
+
+.fc table {
+  font-size: 12.5px;
+}
+
+.fc-daygrid-day-number {
+  color: black;
+}
+
+.fc-event-time {
+  font-weight: bold;
+}
+
+
+/* Link ================================================ */
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+
+/* Markup: #1 Zooming In ================================================ */
+
+b {
+  color: black;
+  background: white;
+}
+
+ul > li b {
+  color: white;
+  background: transparent;
+}
+
+
+/* Markup: #2 New Horizons ================================================ */
+
+i {
+  color: black;
+  background: yellow;
+  font-style: normal;
+}
+
+ul > li i {
+  color: yellow;
+  background: transparent;
+}
+
+
+/* Markup: #3 Gardeners' Map ================================================ */
+
+u {
+  color: white;
+  background: blue;
+  text-decoration: none;
+}
+
+ul > li u {
+  color: blue;
+  background: transparent;
+}
+
+
+/* Markup: #4 Terraforming ================================================ */
+
+b i {
+  background: red;
+}
+
+ul > li b i {
+  color: red;
+  background: transparent;
+}
+
+
+/* Markup: List Indent ================================================ */
+
+/* ul {
+  padding-left: 10px !important;
+}
+
+.fc-event-url > ul > li b::before {
+  content:': ';
+  margin-left: -12px;
+}
+
+.fc-event-url > ul > li i::before {
+  content:': ';
+  margin-left: -12px;
+}
+
+.fc-event-url > ul > li u::before {
+  content:': ';
+  margin-left: -12px;
+}
+
+.fc-event-url > ul > li b i::before {
+  content:': ';
+  margin-left: -12px;
+} */
+

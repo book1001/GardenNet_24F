@@ -6,18 +6,12 @@
   src: url('./font/FKGroteskSemiMonoTrial-Regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'ABCArizona-Regular';
-  src: url('https://platform934.net/font/ABCArizonaFlare-Regular.woff') format('woff');
-  src: url('https://platform934.net/font/ABCArizonaFlare-Regular.woff2') format('woff2');
-}
-
 
 /* text: drag color ================================================ */
 
 ::selection {
   color: #000000;
-  text-shadow: 0 0px 6px yellow;
+  /* text-shadow: 0 0px 6px yellow; */
   text-decoration: none;
   /* color: #000000 !important;
   background: #ffffff !important; */
@@ -26,7 +20,7 @@
 /* Code for Firefox */
 ::-moz-selection { 
   color: #000000;
-  text-shadow: 0 0px 6px yellow;
+  /* text-shadow: 0 0px 6px yellow; */
   text-decoration: none;
   /* color: #000000 !important;
   background: #ffffff !important; */
@@ -79,7 +73,7 @@ a > p:hover {
 
 .BlockInner__Text > p::selection {
   color: #000000;
-  text-shadow: 0 0px 6px blue;
+  /* text-shadow: 0 0px 6px blue; */
   background: gainsboro;
   /* color: #000000;
   text-shadow: 0 0px 6px yellow; */
