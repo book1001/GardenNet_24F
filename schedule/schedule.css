@@ -40,18 +40,12 @@ html,body {
   width: 25%;
 }
 
-/* #fc-dom-214,
-#fc-dom-224{
-  position: absolute;
-  width: 100%;
-  text-align: right;
-  color: black;
-  background: #fdbbff;
-  z-index: -1;
-} */
-
 
 /* Dates: Align ================================================ */
+
+.fc-daygrid-day-top {
+  height: 16px;
+}
 
 .fc-event-url > ol {
   margin-block-start: 1px;
@@ -59,6 +53,7 @@ html,body {
   padding-inline-start: 0;
   list-style: none;
   padding-left: 0;
+  word-wrap: break-word;
 }
 
 .fc-event-url > ol > li {
@@ -71,6 +66,7 @@ html,body {
   padding-inline-start: 0;
   list-style: none;
   padding-left: 0;
+  word-wrap: break-word;
 }
 
 .fc-event-url > ul > li {

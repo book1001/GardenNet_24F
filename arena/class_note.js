@@ -40,7 +40,7 @@ function renderChannel(slug, page) {
 
   // Fetch the channel data from the Are.na API
   let time = Date.now();
-  let per = 12;
+  let per = 30;
   let url = `https://api.are.na/v2/channels/${slug}/contents?t=${time}&direction=desc&sort=position&page=${page}&per=${per}`;
 
 

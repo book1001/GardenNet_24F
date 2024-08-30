@@ -43,6 +43,40 @@ ul > li b i {
 }
 
 
+/* Day: Specific ================================================ */
+
+#fc-dom-140,
+#fc-dom-142,
+#fc-dom-144,
+#fc-dom-146,
+#fc-dom-148,
+#fc-dom-150,
+#fc-dom-152 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  color: black;
+  background: white;
+  z-index: -1;
+}
+
+#fc-dom-88,
+#fc-dom-174,
+#fc-dom-176,
+#fc-dom-178,
+#fc-dom-180,
+#fc-dom-182 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  color: white;
+  background: black;
+  z-index: -1;
+}
+
+
 /* ??? ================================================ */
 
 .fc-event {
