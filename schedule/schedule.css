@@ -1,13 +1,5 @@
 /* Scrollbar ================================================ */
 
-:root {
-  --fc-today-bg-color: transparent;
-  --fc-event-bg-color: transparent;
-  --fc-event-border-color: transparent;
-  --fc-border-color: transparent;
-  --fc-event-text-color: #000000;
-}
-
 ::-webkit-scrollbar { 
   width: 0;
 }
@@ -44,7 +36,8 @@ html,body {
 /* Dates: Align ================================================ */
 
 .fc-daygrid-day-top {
-  height: 16px;
+  flex-direction: row !important;
+  height: 23px;
 }
 
 .fc-event-url > ol {

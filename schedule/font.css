@@ -13,6 +13,27 @@
 }
 
 
+/* Root ================================================ */
+
+:root {
+  --fc-today-bg-color: transparent;
+  --fc-event-bg-color: transparent;
+  --fc-event-border-color: transparent;
+  --fc-border-color: transparent;
+  --fc-small-font-size: 12.5px;
+  --fc-event-text-color: #000000;
+
+  --p1-text: black;
+  --p1-bg: white;
+  --p2-text: white;
+  --p2-bg: blue;
+  --p3-text: black;
+  --p3-bg: yellow;
+  --p4-text: black;
+  --p4-bg: white;
+}
+
+
 /* Default Font ================================================ */
 
 .fc-col-header-cell-cushion {
@@ -45,41 +66,41 @@ a {
 /* Markup: #1 Zooming In ================================================ */
 
 b {
-  color: black;
-  background: white;
+  color: var(--p1-text);
+  background: var(--p1-bg);
   font-weight: normal;
 }
 
 ul > li b {
-  color: white;
+  color: var(--p1-bg);
+  background: transparent;
+}
+
+
+/* Markup: #3 Gardeners' Map  ================================================ */
+
+i {
+  color: var(--p3-text);
+  background: var(--p3-bg);
+  font-style: normal;
+}
+
+ul > li i {
+  color: var(--p3-bg);
   background: transparent;
 }
 
 
 /* Markup: #2 New Horizons ================================================ */
 
-i {
-  color: black;
-  background: yellow;
-  font-style: normal;
-}
-
-ul > li i {
-  color: yellow;
-  background: transparent;
-}
-
-
-/* Markup: #3 Gardeners' Map ================================================ */
-
 u {
-  color: white;
-  background: blue;
+  color: var(--p2-text);
+  background: var(--p2-bg);
   text-decoration: none;
 }
 
 ul > li u {
-  color: blue;
+  color: var(--p2-bg);
   background: transparent;
 }
 
@@ -87,13 +108,14 @@ ul > li u {
 /* Markup: #4 Terraforming ================================================ */
 
 b i {
-  background: red;
+  color: var(--p4-text);
+  background: var(--p4-bg);
   font-weight: normal;
   font-style: normal;
 }
 
 ul > li b i {
-  color: red;
+  color: var(--p4-bg);
   background: transparent;
 }
 

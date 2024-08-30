@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     views: {
       dayGridFourWeek: {
         type: 'dayGrid',
-        duration: { weeks: 16 },
+        duration: { weeks: 15 },
       },
     },
     headerToolbar: {

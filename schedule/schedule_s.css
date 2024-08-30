@@ -1,10 +1,3 @@
-/* Default Font Size ================================================ */
-
-:root {
-  --fc-small-font-size: 14.4px;
-}
-
-
 /* H-top ================================================ */
 
 .h-top {
@@ -45,6 +38,7 @@ ul > li b i {
 
 /* Day: Specific ================================================ */
 
+/* Exhibition */
 #fc-dom-140,
 #fc-dom-142,
 #fc-dom-144,
@@ -55,12 +49,39 @@ ul > li b i {
   position: absolute;
   width: 100%;
   height: 100%;
-  text-align: right;
+  /* text-align: right; */
   color: black;
-  background: white;
+  background: var(--p3-bg);
   z-index: -1;
 }
 
+
+/* Senior Reviews */
+#fc-dom-190,
+#fc-dom-192 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* text-align: right; */
+  color: black;
+  background: var(--p4-bg);
+  z-index: -1;
+}
+
+
+/* Final Package */
+#fc-dom-210 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* text-align: right; */
+  color: black;
+  background: var(--p4-bg);
+  z-index: -1;
+}
+
+
+/* No Class */
 #fc-dom-88,
 #fc-dom-174,
 #fc-dom-176,
@@ -70,7 +91,7 @@ ul > li b i {
   position: absolute;
   width: 100%;
   height: 100%;
-  text-align: right;
+  /* text-align: right; */
   color: white;
   background: black;
   z-index: -1;
