@@ -51,7 +51,6 @@
   }
 
   h1 {
-    /* font-size: 30px; */
     margin-block-end: 50px;
   }
 
@@ -176,7 +175,7 @@
   } */
 
   .h-top {
-    height: 117px;
+    height: 134px;
   }
 
   .col2-full {
@@ -265,10 +264,6 @@
     grid-row: 0; */
   }
 
-  .p-title {
-    top: 65px;
-  }
-  
   .p-title-sub {
     display: none;
   }
@@ -313,18 +308,12 @@
   }
 
   .font-menu {
-    font-size: 15px;
     padding-right: 4px;
     padding-bottom: 4px;
   }
 
   h1 {
-    margin-block-start: 20px;
     margin-block-end: 20px;
-  }
-
-  h3, h4 { 
-    font-size: 15px;
   }
 
 }

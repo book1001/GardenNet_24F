@@ -19,8 +19,8 @@
 
 @media only screen and (max-width:400px) {   /* For tablets: */
 
-  .h-arena-top {
-    height: 117px;
+  .h-top {
+    height: 134px;
   }
 
   .ChannelContents {
