@@ -31,6 +31,7 @@
   --p3-bg: yellow;
   --p4-text: black;
   --p4-bg: white;
+  --pn-text: #1DDA59;
 }
 
 
@@ -123,6 +124,21 @@ b i {
 
 ul > li b i {
   color: var(--p4-bg);
+  background: transparent;
+}
+
+
+
+/* Markup: No Class ================================================ */
+
+b u {
+  color: var(--pn-text);
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul > li b u {
+  color: var(--pn-text);
   background: transparent;
 }
 
