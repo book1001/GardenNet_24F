@@ -67,6 +67,17 @@ html,body {
 }
 
 
+/* Dates: No Scroll ================================================ */
+.fc * {
+  overflow: hidden;
+}
+
+
+/* Table: Border Bottom hr ================================================ */
+.fc .fc-scrollgrid-section-body table, .fc .fc-scrollgrid-section-footer table {
+  border-bottom: 1px black solid;
+}
+
 /* ??? ================================================ */
 
 .fc .fc-col-header-cell-cushion {
