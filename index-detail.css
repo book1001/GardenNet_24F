@@ -38,7 +38,7 @@
   left: 50%;
   width: 100%;
   transform: translate(-50%, 0);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 .p-title-bg {
